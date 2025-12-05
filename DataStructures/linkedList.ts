@@ -250,4 +250,13 @@ class SinglyLinkedList<T> {
     }
     this.head = prev;
   }
+
+  traverse() {
+    let temp = this.head;
+
+    while (temp !== null) {
+      console.log(temp.value);
+      temp = temp.next;
+    }
+  }
 }
